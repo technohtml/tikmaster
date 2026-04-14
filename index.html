@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TikMaster Pro - Download TikTok Videos in Original HD/4K Quality | No Watermark</title>
+    <meta name="google-site-verification" content="_vn7Jd77R6x4GZMK93_JLC90LtibBNQbjCc2tJTC8r0" />
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Download TikTok videos without watermark in original Ultra HD quality. Fastest 4K TikTok downloader with zero compression. Free, fast and mobile friendly. Support all TikTok links.">
+    <meta name="keywords" content="TikTok Downloader, HD TikTok Download, No Watermark, 4K TikTok Downloader, Viral Video Downloader, TikTok Video Saver, TikTok MP4 Download, TikTok Without Logo">
+    <meta name="author" content="TikMaster Pro">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="1 days">
+    <link rel="canonical" href="https://yourdomain.com/">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="TikMaster Pro - Best TikTok Video Downloader">
+    <meta property="og:description" content="Download TikTok videos without watermark in HD/4K quality. Free and fast!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:image" content="https://yourdomain.com/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TikMaster Pro - TikTok Downloader">
+    <meta name="twitter:description" content="Download TikTok videos without watermark in HD quality">
+    
+    <!-- Google Analytics (Replace G-XXXXXXXXXX with your ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    
+    <!-- Google AdSense (Replace ca-pub-XXXXXXXX with your ID) -->
+    <meta name="google-adsense-account" content="ca-pub-XXXXXXXXXXXXXX">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #ff004f;
+            --secondary: #00e676;
+            --dark: #0a0a0f;
+            --card: #12121a;
+            --border: #252530;
+            --text: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        
+        body { background-color: var(--dark); color: var(--text); line-height: 1.6; overflow-x: hidden; }
+
+        .container { width: 100%; max-width: 600px; margin: 0 auto; padding: 20px; }
+
+        .header { text-align: center; padding: 30px 0; }
+        .logo { font-size: 2.5rem; font-weight: 800; background: linear-gradient(45deg, var(--primary), #ff6b35); -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: -1px; }
+        .tagline { font-size: 0.9rem; color: #8a8aa3; margin-top: 5px; }
+
+        /* Ad Slots */
+        .ad-slot { margin: 20px 0; background: #0d0d14; border: 1px dashed var(--border); border-radius: 12px; min-height: 90px; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; color: #444; overflow: hidden; }
+        
+        /* Real AdSense styling */
+        .adsbygoogle { display: block; width: 100%; min-height: 90px; background: #0d0d14; }
+
+        .main-card { background: var(--card); border-radius: 28px; padding: 25px; border: 1px solid var(--border); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+
+        .input-group { position: relative; margin-bottom: 20px; }
+        input { width: 100%; padding: 18px 20px; background: #000; border: 2px solid var(--border); border-radius: 15px; color: #fff; font-size: 1rem; outline: none; transition: 0.3s; }
+        input:focus { border-color: var(--primary); box-shadow: 0 0 15px rgba(255,0,79,0.3); }
+
+        .btn-main { width: 100%; padding: 18px; border-radius: 15px; border: none; font-weight: 800; font-size: 1.1rem; cursor: pointer; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; }
+        #fetchBtn { background: var(--primary); color: white; margin-bottom: 10px; }
+        #fetchBtn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+        .result-section { display: none; margin-top: 25px; animation: fadeInUp 0.5s ease; }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+        .preview-box { width: 100%; border-radius: 20px; overflow: hidden; margin-bottom: 15px; border: 1px solid var(--border); position: relative; }
+        .preview-box img { width: 100%; display: block; background: #000; }
+        .quality-label { position: absolute; top: 15px; right: 15px; background: var(--secondary); color: #000; padding: 5px 12px; border-radius: 50px; font-weight: 700; font-size: 0.7rem; z-index: 2; }
+
+        .dl-hd-btn { background: var(--secondary); color: #000; }
+        .dl-mp3-btn { background: #252530; color: #fff; margin-top: 10px; }
+
+        .progress-container { margin-top: 15px; display: none; }
+        .progress-bg { width: 100%; height: 8px; background: #222; border-radius: 10px; overflow: hidden; }
+        .progress-bar { width: 0%; height: 100%; background: var(--secondary); transition: 0.1s; }
+        .status-txt { font-size: 0.75rem; text-align: center; margin-top: 8px; color: var(--secondary); }
+
+        /* SEO Content Section */
+        .seo-content { margin-top: 40px; padding: 20px; color: #8a8aa3; font-size: 0.85rem; }
+        .seo-content h2 { color: #fff; margin-bottom: 10px; font-size: 1.2rem; }
+        .seo-content h3 { color: #ccc; margin: 15px 0 8px; font-size: 1rem; }
+        .seo-content ul { margin-left: 20px; }
+
+        footer { text-align: center; padding: 30px; font-size: 0.75rem; color: #444; border-top: 1px solid var(--border); }
+
+        .error-message { background: rgba(255,0,79,0.2); border-left: 4px solid var(--primary); padding: 12px; border-radius: 12px; margin-top: 15px; font-size: 0.85rem; color: #ff8899; }
+        
+        .quality-selector { display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap; }
+        .quality-btn { flex: 1; background: #1e1e2a; border: 1px solid var(--border); border-radius: 12px; padding: 8px; color: white; font-size: 0.75rem; font-weight: 600; cursor: pointer; transition: 0.2s; text-align: center; }
+        .quality-btn.active { background: var(--primary); border-color: var(--primary); }
+        
+        /* Social Share Buttons */
+        .share-section { margin-top: 20px; padding-top: 15px; border-top: 1px solid var(--border); }
+        .share-title { font-size: 0.8rem; color: #8a8aa3; margin-bottom: 10px; text-align: center; }
+        .share-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+        .share-btn { padding: 8px 16px; border-radius: 50px; font-size: 0.75rem; font-weight: 600; cursor: pointer; transition: 0.2s; border: none; display: inline-flex; align-items: center; gap: 6px; }
+        .share-twitter { background: #1DA1F2; color: white; }
+        .share-fb { background: #4267B2; color: white; }
+        .share-wa { background: #25D366; color: white; }
+        .share-copy { background: #444; color: white; }
+        .share-btn:hover { opacity: 0.8; transform: scale(1.02); }
+        
+        @media (max-width: 480px) {
+            .logo { font-size: 2rem; }
+            .main-card { padding: 15px; }
+            .quality-btn { font-size: 0.7rem; padding: 6px; }
+            .share-btn { padding: 6px 12px; font-size: 0.7rem; }
+        }
+        
+        /* FAQ Section Styling */
+        .faq-item { margin-bottom: 15px; background: #0d0d14; border-radius: 12px; padding: 12px; }
+        .faq-question { font-weight: 700; color: var(--secondary); cursor: pointer; }
+        .faq-answer { margin-top: 8px; font-size: 0.8rem; display: none; }
+        .faq-item.active .faq-answer { display: block; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1 class="logo">🎵 TikMaster Pro</h1>
+        <p class="tagline">Ultra HD TikTok Downloader • No Watermark • 4K Ready • Free & Fast</p>
+    </div>
+
+    <!-- Ad Slot 1 - Top Banner -->
+    <div class="ad-slot">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXX"
+             data-ad-slot="1234567890"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <div class="main-card">
+        <div class="input-group">
+            <input type="text" id="videoUrl" placeholder="Paste TikTok link here... (supports all TikTok URLs)" autocomplete="off">
+        </div>
+        <button id="fetchBtn" class="btn-main">🚀 Get Video (Original Quality)</button>
+
+        <div id="resultArea" class="result-section">
+            <div class="preview-box">
+                <img id="thumb" src="" alt="preview">
+                <div class="quality-label" id="qualityBadge">ORIGINAL HD</div>
+            </div>
+            <p id="videoTitle" style="font-weight: 600; margin-bottom: 5px; font-size: 0.9rem;"></p>
+            <p id="videoSize" style="color: var(--secondary); font-size: 0.8rem; margin-bottom: 10px;"></p>
+            
+            <div class="quality-selector" id="qualitySelector">
+                <div class="quality-btn" data-quality="hd">🎬 HD/4K (Best)</div>
+                <div class="quality-btn" data-quality="normal">📱 Normal</div>
+            </div>
+            
+            <button id="dlBtn" class="btn-main dl-hd-btn">⬇️ Download Video (HD/4K)</button>
+            <button id="mp3Btn" class="btn-main dl-mp3-btn">🎵 Download Audio (MP3)</button>
+
+            <div id="progCont" class="progress-container">
+                <div class="progress-bg"><div id="fill" class="progress-bar"></div></div>
+                <p id="statusTxt" class="status-txt">Preparing original file...</p>
+            </div>
+            
+            <!-- Social Share Section -->
+            <div class="share-section">
+                <div class="share-title">📢 Share this tool with friends</div>
+                <div class="share-buttons">
+                    <button class="share-btn share-twitter" onclick="shareOnTwitter()">🐦 Twitter</button>
+                    <button class="share-btn share-fb" onclick="shareOnFacebook()">📘 Facebook</button>
+                    <button class="share-btn share-wa" onclick="shareOnWhatsApp()">💬 WhatsApp</button>
+                    <button class="share-btn share-copy" onclick="copyPageLink()">📋 Copy Link</button>
+                </div>
+            </div>
+        </div>
+        <div id="errorArea" style="display: none;"></div>
+    </div>
+
+    <!-- Ad Slot 2 - Middle (Native Ad) -->
+    <div class="ad-slot">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXX"
+             data-ad-slot="0987654321"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <!-- SEO Content Section with Keywords -->
+    <div class="seo-content">
+        <h2>How to Download TikTok Videos in 4K Without Watermark?</h2>
+        <p>Our <strong>TikTok Downloader</strong> uses advanced multi-API technology to fetch the <b>Original HD Video</b> directly from TikTok's servers. Unlike other tools that compress videos to 20MB, TikMaster Pro detects the maximum bitrate (often 100MB+) to ensure you get the best quality possible. <strong>Download TikTok videos without logo</strong> in just one click!</p>
+        
+        <h3>🔥 Features of TikMaster Pro</h3>
+        <ul>
+            <li>✅ <strong>No Watermark</strong> - Download TikTok videos without the TikTok logo</li>
+            <li>✅ <strong>4K/HD Quality</strong> - Get original Ultra HD quality videos</li>
+            <li>✅ <strong>MP3 Audio Download</strong> - Extract audio from any TikTok video</li>
+            <li>✅ <strong>Fast & Free</strong> - No registration, no hidden fees</li>
+            <li>✅ <strong>Mobile Friendly</strong> - Works perfectly on iPhone, Android, and Desktop</li>
+            <li>✅ <strong>Support All Links</strong> - Works with all TikTok URL formats</li>
+        </ul>
+        
+        <h3>📝 How to Use (3 Simple Steps)</h3>
+        <ul>
+            <li>1️⃣ Copy the link of any TikTok video from the app or website</li>
+            <li>2️⃣ Paste the link in the input box above and click "Get Video"</li>
+            <li>3️⃣ Choose quality (HD or Normal) and click download button</li>
+        </ul>
+        
+        <h3>❓ Frequently Asked Questions</h3>
+        <div class="faq-item">
+            <div class="faq-question">► Is this TikTok downloader completely free?</div>
+            <div class="faq-answer">Yes! TikMaster Pro is 100% free. No hidden charges, no premium plans. We earn through ads to keep the service running.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">► Does it work on mobile phones?</div>
+            <div class="faq-answer">Absolutely! Our tool is fully optimized for both iOS (iPhone) and Android devices. The download process is seamless on all platforms.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">► Why can't I download some videos?</div>
+            <div class="faq-answer">Some videos may be set to private by the user, or the video might have been removed by TikTok. Public videos work perfectly.</div>
+        </div>
+        
+        <p><b>Popular searches:</b> TikTok video downloader no watermark | TikTok saver HD | Download TikTok without logo | Best TikTok downloader 2026 | TikTok to MP4 converter</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 TikMaster Pro. All Rights Reserved.</p>
+        <p>Not affiliated with TikTok Inc. For personal use only. DMCA ignored? Contact for removal.</p>
+        <p>📍 <a href="#" style="color:#666;">Privacy Policy</a> | <a href="#" style="color:#666;">Terms of Service</a> | <a href="#" style="color:#666;">Contact Us</a></p>
+    </footer>
+</div>
+
+<script>
+    // ========================
+    // COMPLETE TIKTOK DOWNLOADER WITH SEO, ADS, SOCIAL SHARE
+    // ========================
+    
+    const fetchBtn = document.getElementById('fetchBtn');
+    const resultArea = document.getElementById('resultArea');
+    const urlInput = document.getElementById('videoUrl');
+    const errorArea = document.getElementById('errorArea');
+    const progCont = document.getElementById('progCont');
+    const fillBar = document.getElementById('fill');
+    const statusTxt = document.getElementById('statusTxt');
+    const dlBtn = document.getElementById('dlBtn');
+    const mp3Btn = document.getElementById('mp3Btn');
+    const qualityBtns = document.querySelectorAll('.quality-btn');
+    const thumbImg = document.getElementById('thumb');
+    const videoTitleSpan = document.getElementById('videoTitle');
+    const videoSizeSpan = document.getElementById('videoSize');
+    
+    let currentVideoData = null;
+    let selectedQuality = 'hd';
+    
+    // ---------- FAQ Toggle ----------
+    document.querySelectorAll('.faq-question').forEach(q => {
+        q.addEventListener('click', () => {
+            q.parentElement.classList.toggle('active');
+        });
+    });
+    
+    // ---------- Social Share Functions ----------
+    function shareOnTwitter() {
+        window.open(`https://twitter.com/intent/tweet?text=Download TikTok videos in HD without watermark! Free tool&url=${encodeURIComponent(window.location.href)}`, '_blank');
+    }
+    function shareOnFacebook() {
+        window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`, '_blank');
+    }
+    function shareOnWhatsApp() {
+        window.open(`https://wa.me/?text=Check out this TikTok downloader! ${encodeURIComponent(window.location.href)}`, '_blank');
+    }
+    function copyPageLink() {
+        navigator.clipboard.writeText(window.location.href);
+        alert('✅ Link copied! Share with your friends.');
+    }
+    
+    // ---------- URL VALIDATION ----------
+    function isValidTikTokUrl(url) {
+        if(!url || typeof url !== 'string') return false;
+        const patterns = [
+            /tiktok\.com\/@[\w.-]+\/video\/\d+/i,
+            /tiktok\.com\/@[\w.-]+\/v\/\d+/i,
+            /tiktok\.com\/t\/[\w]+/i,
+            /vm\.tiktok\.com\/[\w]+/i,
+            /tiktok\.com\/[\w]+\/video\/\d+/i
+        ];
+        return patterns.some(pattern => pattern.test(url));
+    }
+    
+    function cleanTikTokUrl(url) {
+        try {
+            let urlObj = new URL(url);
+            if(urlObj.hostname.includes('tiktok.com')) {
+                return urlObj.origin + urlObj.pathname;
+            }
+            return url;
+        } catch(e) {
+            return url;
+        }
+    }
+    
+    // ---------- MULTI-API FALLBACK ----------
+    async function fetchWithFallback(originalUrl) {
+        const cleanUrl = cleanTikTokUrl(originalUrl);
+        const encodedUrl = encodeURIComponent(cleanUrl);
+        
+        const apis = [
+            {
+                name: 'TikWM',
+                url: `https://tikwm.com/api/?url=${encodedUrl}&hd=1`,
+                parser: (data) => {
+                    if(data.code !== 0 || !data.data) return null;
+                    const video = data.data;
+                    return {
+                        success: true,
+                        title: video.title || "TikTok Video",
+                        cover: video.cover || video.origin_cover || '',
+                        hd_url: video.hdplay || video.play || '',
+                        normal_url: video.play || '',
+                        music: video.music || '',
+                        size_hd: video.hd_size || 0,
+                        size_normal: video.size || 0
+                    };
+                }
+            },
+            {
+                name: 'TikMate',
+                url: `https://api.tikmate.app/api/lookup?url=${encodedUrl}`,
+                parser: (data) => {
+                    if(!data || !data.video_url) return null;
+                    return {
+                        success: true,
+                        title: data.title || "TikTok Video",
+                        cover: data.thumb || '',
+                        hd_url: data.video_url || '',
+                        normal_url: data.video_url || '',
+                        music: data.music_url || '',
+                        size_hd: 0,
+                        size_normal: 0
+                    };
+                }
+            }
+        ];
+        
+        for(let api of apis) {
+            try {
+                statusTxt.innerText = `Connecting to ${api.name}...`;
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 8000);
+                const response = await fetch(api.url, { signal: controller.signal });
+                clearTimeout(timeoutId);
+                
+                if(!response.ok) continue;
+                const json = await response.json();
+                const parsed = api.parser(json);
+                if(parsed && parsed.success && (parsed.hd_url || parsed.normal_url)) {
+                    return parsed;
+                }
+            } catch(e) {
+                console.warn(`API ${api.name} failed`);
+                continue;
+            }
+        }
+        return null;
+    }
+    
+    // ---------- Main Fetch ----------
+    async function fetchVideo() {
+        let rawUrl = urlInput.value.trim();
+        if(!rawUrl) {
+            showError("Please paste a TikTok video link!");
+            return;
+        }
+        
+        if(!isValidTikTokUrl(rawUrl)) {
+            showError("❌ Invalid TikTok URL. Please paste a correct link from TikTok.");
+            return;
+        }
+        
+        resultArea.style.display = 'none';
+        errorArea.style.display = 'none';
+        fetchBtn.disabled = true;
+        fetchBtn.innerText = "⏳ Processing...";
+        
+        try {
+            const videoInfo = await fetchWithFallback(rawUrl);
+            
+            if(!videoInfo || (!videoInfo.hd_url && !videoInfo.normal_url)) {
+                throw new Error("Could not fetch video. Video might be private or removed.");
+            }
+            
+            currentVideoData = videoInfo;
+            thumbImg.src = videoInfo.cover || 'https://placehold.co/400x600/1a1a2e/ffffff?text=TikTok+Preview';
+            videoTitleSpan.innerText = videoInfo.title.substring(0, 80) || "TikTok Video";
+            
+            const hasHd = videoInfo.hd_url && videoInfo.hd_url !== videoInfo.normal_url;
+            document.getElementById('qualitySelector').style.display = hasHd ? 'flex' : 'none';
+            
+            updateSizeDisplay();
+            resultArea.style.display = 'block';
+            resultArea.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            
+        } catch (err) {
+            showError(err.message || "Network error. Try again.");
+            resultArea.style.display = 'none';
+        } finally {
+            fetchBtn.disabled = false;
+            fetchBtn.innerText = "🚀 Get Video (Original Quality)";
+        }
+    }
+    
+    function updateSizeDisplay() {
+        if(!currentVideoData) return;
+        const isHd = (selectedQuality === 'hd' && currentVideoData.hd_url);
+        let sizeBytes = isHd ? currentVideoData.size_hd : currentVideoData.size_normal;
+        let qualityText = isHd ? "Ultra HD 4K Quality" : "Standard Quality";
+        
+        if(sizeBytes && sizeBytes > 0) {
+            const sizeMB = (sizeBytes / (1024 * 1024)).toFixed(2);
+            videoSizeSpan.innerText = `📦 Size: ${sizeMB} MB (${qualityText})`;
+        } else {
+            videoSizeSpan.innerText = `✨ ${qualityText} - Ready to download`;
+        }
+        
+        const badge = document.getElementById('qualityBadge');
+        if(isHd) {
+            badge.innerText = "🔥 4K/HD READY";
+            badge.style.background = "#ff004f";
+        } else {
+            badge.innerText = "📱 STANDARD HD";
+            badge.style.background = "#00e676";
+            badge.style.color = "#000";
+        }
+    }
+    
+    qualityBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const quality = btn.getAttribute('data-quality');
+            if(quality === 'hd' && currentVideoData && !currentVideoData.hd_url) {
+                showError("HD version not available. Using normal quality.");
+                return;
+            }
+            selectedQuality = quality;
+            qualityBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            updateSizeDisplay();
+        });
+    });
+    
+    async function startDownload(url, filename) {
+        if(!url) {
+            showError("Download link not available.");
+            return;
+        }
+        
+        progCont.style.display = 'block';
+        fillBar.style.width = '0%';
+        statusTxt.innerText = "Starting download...";
+        
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        
+        try {
+            const response = await fetch(url);
+            if(!response.ok) throw new Error("Network error");
+            
+            const reader = response.body.getReader();
+            const total = parseInt(response.headers.get('Content-Length') || '0');
+            let loaded = 0;
+            let chunks = [];
+            
+            while(true) {
+                const {done, value} = await reader.read();
+                if(done) break;
+                chunks.push(value);
+                loaded += value.length;
+                if(total > 0) {
+                    let percent = ((loaded / total) * 100).toFixed(0);
+                    fillBar.style.width = percent + '%';
+                    statusTxt.innerText = `Downloading: ${percent}% (${(loaded/1024/1024).toFixed(1)}MB)`;
+                }
+            }
+            
+            const blob = new Blob(chunks);
+            const blobUrl = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = blobUrl;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            window.URL.revokeObjectURL(blobUrl);
+            
+            statusTxt.innerText = "✅ Download complete!";
+            setTimeout(() => progCont.style.display = 'none', 2000);
+            
+        } catch (err) {
+            statusTxt.innerText = "Using direct download...";
+            window.location.href = url;
+            setTimeout(() => progCont.style.display = 'none', 1500);
+        }
+    }
+    
+    function handleVideoDownload() {
+        if(!currentVideoData) {
+            showError("Fetch a video first.");
+            return;
+        }
+        
+        let videoUrl = (selectedQuality === 'hd' && currentVideoData.hd_url) ? currentVideoData.hd_url : currentVideoData.normal_url;
+        if(!videoUrl) videoUrl = currentVideoData.hd_url || currentVideoData.normal_url;
+        
+        const filename = `TikMaster_${Date.now()}.mp4`;
+        startDownload(videoUrl, filename);
+    }
+    
+    function handleAudioDownload() {
+        if(!currentVideoData || !currentVideoData.music) {
+            showError("Audio not available for this video.");
+            return;
+        }
+        const filename = `TikMaster_Audio_${Date.now()}.mp3`;
+        startDownload(currentVideoData.music, filename);
+    }
+    
+    function showError(msg) {
+        errorArea.style.display = 'block';
+        errorArea.innerHTML = `<div class="error-message">⚠️ ${msg}</div>`;
+        setTimeout(() => errorArea.style.display = 'none', 4000);
+    }
+    
+    fetchBtn.addEventListener('click', fetchVideo);
+    dlBtn.addEventListener('click', handleVideoDownload);
+    mp3Btn.addEventListener('click', handleAudioDownload);
+    urlInput.addEventListener('keypress', (e) => { if(e.key === 'Enter') fetchVideo(); });
+    
+    document.querySelector('[data-quality="hd"]').classList.add('active');
+</script>
+</body>
+</html>
